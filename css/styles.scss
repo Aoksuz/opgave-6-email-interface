@@ -19,6 +19,10 @@ a{
     }
 }
 
+p{
+  line-height: 1.5;
+}
+
 .navbar{
     padding: 1em 5em;
     .logo{
@@ -28,3 +32,140 @@ a{
         
     }
     }
+        font-weight: 600;
+        color: $purple;
+
+    }
+
+    .wrapper{
+        padding: 2em;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px 30px;
+
+        .menu-punkt{
+            display: flex;
+            align-items: center;
+            padding: 1em 3em;
+            border: 1px solid $purple;
+            color: $purple-dark;
+            text-transform: uppercase;
+            font-size: 13px;
+            border-radius: 8px;
+            svg{
+                margin-right: 10px;
+                justify-self: start;
+                width: 18px;
+                height: auto;
+            }
+        }
+        .menu-punkt.active{
+            background: $purple;
+        }
+
+    }
+
+}
+
+
+
+/* sektion 2 */
+.content-container{
+  display: flex;
+  flex-direction: column;
+
+  .mail-container{
+    background-color: $white;
+
+    .mails{
+      padding: 0 2em;
+      color: $black;
+      height: 120px;
+      border-top: 1px solid $black;
+      display: grid;
+      grid-template-columns: 0.4fr 4fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+
+      &:hover svg{
+opacity: 1;
+      }
+
+      p{
+        margin: 0;
+      }
+
+      .icon-opacity{
+        opacity: 0;
+      }
+
+      .star-marked{
+        padding-top: 10px;
+
+        svg{
+          stroke-width: 1.5;
+        }
+
+        .icon-yellow:hover{
+          fill: $yellow;
+          stroke: $yellow;
+        }
+      }
+
+      .titel{
+        font-weight: 800;
+        align-self: end;
+      }
+
+      .mail-icons{
+        width: 60px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        justify-self: flex-end;
+
+        svg{
+          stroke-width: 1.5px;
+          opacity: 0;
+          transition: 300ms ease;
+        }
+
+        .icon-red:hover{
+          fill: lighten($error, 5);
+        }
+      }
+
+      .dato{
+        font-size: 14px;
+        justify-self: flex-end;
+      }
+    }
+
+    .mail1{
+
+    }
+
+    .star-marked { grid-area: 1 / 1 / 3 / 2; }
+    .titel { grid-area: 1 / 2 / 2 / 3; }
+    .mail-icons { grid-area: 1 / 3 / 2 / 4; }
+    .mail-emne { grid-area: 2 / 2 / 3 / 3; }
+    .dato { grid-area: 2 / 3 / 3 / 4; }
+
+    .read{
+    }
+  }
+
+  @media screen and (min-width: 992px){
+
+    .mail-container{
+      display: flex;
+    }
+  }
+}
