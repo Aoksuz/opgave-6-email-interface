@@ -12,37 +12,47 @@
     <meta name="copyright" content="Information om copyright">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OG Meta Tags-->
-    <meta property="og:title" content="titel"/>
-    <meta property="og:url" content="http://www.domain.dk"/>
-    <meta property="og:image" content="https://www.domain.dk/img.jpg"/>
-    <meta property="og:description" content="Beskrivelse"/>
-    <meta property="og:locale" content="da_DK"/>
+    <meta property="og:title" content="titel" />
+    <meta property="og:url" content="http://www.domain.dk" />
+    <meta property="og:image" content="https://www.domain.dk/img.jpg" />
+    <meta property="og:description" content="Beskrivelse" />
+    <meta property="og:locale" content="da_DK" />
+
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+        type="text/css">
 
     <!-- CSS -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-    <!-- Adobe fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/gvz8zsd.css">
-    <!-- Google Fonts - Open Sans -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <!-- Inter UI -->
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div class="grid-wrapper">
-        <div class="navbar">
-                <div class="wrapper">
-                    <div class="logo">
-                        <a href="#"></a>
-                    </div>
-                    <div class="menu"></div>
-                </div>
+    <div class="navbar">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#">Youth Mail</a>
+            </div>
+            <div class="menu">
+                <a class="menu-punkt active" href="#">
+                    <i data-feather="inbox"></i> Indbakke
+                </a>
+                <a class="menu-punkt" href="#"><i data-feather="send"></i> Sendt</a>
+                <a class="menu-punkt" href="#"><i data-feather="file-text"></i> Kladder</a>
+                <a class="menu-punkt" href="#"><i data-feather="star"></i> Markerede</a>
+                <a class="menu-punkt" href="#"><i data-feather="trash-2"></i> Papirkurv</a>
+                <a class="menu-punkt" href="#"><i data-feather="x-octagon"></i> Spam</a>
+
+            </div>
         </div>
     </div>
 
@@ -127,11 +137,12 @@
         </div>
     </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script type="text/javascript">
-    feather.replace();
-</script>
+    <script type="text/javascript">
+        feather.replace();
+    </script>
 
 </body>
+
 </html>

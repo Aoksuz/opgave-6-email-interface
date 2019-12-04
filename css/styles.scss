@@ -6,7 +6,7 @@
 }
 
 body{
-    background: $white;
+    background: $body;
     margin: 0;
 
 }
@@ -24,10 +24,14 @@ p{
 }
 
 .navbar{
-    padding: 3em 0;
-
+    padding: 1em 5em;
     .logo{
         font-size: 2em;
+        font-weight: 800;
+        color: $black;
+        
+    }
+    }
         font-weight: 600;
         color: $purple;
 
