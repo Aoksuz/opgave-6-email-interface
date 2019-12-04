@@ -90,24 +90,27 @@ p{
       grid-column-gap: 0;
       grid-row-gap: 0;
 
+      svg{
+        opacity: 0;
+        stroke-width: 1.5;
+      }
+
       &:hover svg{
-opacity: 1;
+        opacity: 1;
+      }
+
+      &:hover{
+        .mail-icons svg{
+          opacity: 1;
+        }
       }
 
       p{
         margin: 0;
       }
 
-      .icon-opacity{
-        opacity: 0;
-      }
-
       .star-marked{
         padding-top: 10px;
-
-        svg{
-          stroke-width: 1.5;
-        }
 
         .icon-yellow:hover{
           fill: $yellow;
@@ -144,10 +147,6 @@ opacity: 1;
       }
     }
 
-    .mail1{
-
-    }
-
     .star-marked { grid-area: 1 / 1 / 3 / 2; }
     .titel { grid-area: 1 / 2 / 2 / 3; }
     .mail-icons { grid-area: 1 / 3 / 2 / 4; }
@@ -155,6 +154,7 @@ opacity: 1;
     .dato { grid-area: 2 / 3 / 3 / 4; }
 
     .read{
+      background: gray;
     }
   }
 
