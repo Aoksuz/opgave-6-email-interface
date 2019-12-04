@@ -130,8 +130,7 @@ p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-left: 1px solid $black;
-    border-right: 1px solid $black;
+    border-right: 1px solid darken($grey, 10);
   }
 }
 
