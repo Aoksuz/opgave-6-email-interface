@@ -1,1 +1,27 @@
 @import "variables";
+
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+
+  .mail-container{
+    padding: 0 5%;
+    background-color: $white;
+
+    .mails{
+      color: $black;
+
+      .titel{
+        font-weight: 800;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px){
+    
+    .mail-container{
+      display: flex;
+    }
+  }
+}
