@@ -1,1 +1,66 @@
 @import "variables";
+
+*{
+    font-family: $font-stack;
+    box-sizing: border-box;
+}
+
+body{
+    background: $white;
+    margin: 0;
+
+}
+
+a{
+    text-decoration: none;
+    &:visited{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.navbar{
+    padding: 3em 0;
+
+    .logo{
+        font-size: 2em;
+        font-weight: 600;
+        color: $purple;
+        
+    }
+    
+    .wrapper{
+        padding: 2em;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px 30px;
+
+        .menu-punkt{
+            display: flex;
+            align-items: center;
+            padding: 1em 3em;
+            border: 1px solid $purple;
+            color: $purple-dark;
+            text-transform: uppercase;
+            font-size: 13px;
+            border-radius: 8px;
+            svg{
+                margin-right: 10px;
+                justify-self: start;
+                width: 18px;
+                height: auto;
+            }
+        }
+        .menu-punkt.active{
+            background: $purple;
+        }
+
+    }
+    
+}
