@@ -47,6 +47,10 @@ p{
   grid-template-rows: 80px auto;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+
+  @media screen and (max-width: 992px){
+    grid-template-columns: 1fr;   
+  } 
 }
 
 .logo {
@@ -72,6 +76,7 @@ p{
     display: grid;
     grid-template-rows: 150px repeat(2, auto);
     border-right: 1px solid darken($grey,10);
+    
     .btn{
       justify-self: center;
     }
@@ -422,5 +427,20 @@ p{
       width: auto;
       margin-left: 3em;
     }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .menu{
+    display: none;
+  }
+  .readiing{
+    display: none;
+  }
+  .mail-toolbar{
+    display: none;
+  }
+  .search{
+    display: none;
   }
 }
