@@ -67,7 +67,12 @@ p{
    justify-self: center;
    background: $grey;
    border-right: 1px solid darken($grey,10);
-
+    @media screen and (max-width: 992px){
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
    a{
      color: $primary;
    }
@@ -76,7 +81,9 @@ p{
      display: none;
     @media screen and (max-width:992px) {
        display: flex;
-       justify-content: space-between;
+       svg{
+         margin: 0 15px;
+       };
      }
    }
   
