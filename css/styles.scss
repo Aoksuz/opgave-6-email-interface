@@ -42,6 +42,7 @@ p{
 }
 
 .grid-wrapper{
+  height: 100vh;
   display: grid;
   grid-template-columns: auto 1fr 2fr;
   grid-template-rows: 80px auto;
@@ -59,12 +60,25 @@ p{
    font-size: 1.75em;
    font-weight: 900;
    color: $primary;
+   display: flex;
    height: 100%;
    width: 100%;
    align-self: center;
    justify-self: center;
    background: $grey;
    border-right: 1px solid darken($grey,10);
+
+   a{
+     color: $primary;
+   }
+
+   div{
+     display: none;
+    @media screen and (max-width:992px) {
+       display: flex;
+       justify-content: space-between;
+     }
+   }
   
   }
   .menu {
