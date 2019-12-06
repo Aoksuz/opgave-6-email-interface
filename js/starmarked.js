@@ -1,8 +1,7 @@
-$(document).ready(function (e) {
-    $('.icon-yellow').on('click', function () {
-        $('this').css({
-            opacity: '1 !important',
-            fill: '$yellow'
-        })
+$(document).ready(function () {
+        $('.icon-yellow').click(function () {
+            $(this).css('opacity', '1');
+            $(this).css('fill', '#ffde59');
+            $(this).css('color', '#ffde59');
+        });
     });
-});
