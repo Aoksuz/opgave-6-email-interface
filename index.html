@@ -41,7 +41,7 @@
             <div class="logo">
                 <a href="#">Youth Mail</a>
                 <div>
-                    <i data-feather="edit"></i>
+                    <i class="opret" data-feather="edit"></i>
                     <i data-feather="search"></i>
                     <i data-feather="menu"></i>
                 </div>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="menu">
-                    <a class="btn"><i data-feather="edit-3"></i>Ny Besked</a>
+                    <a class="btn opret"><i data-feather="edit-3"></i>Ny Besked</a>
                     <div class="nav">
                     <a class="menu-punkt active" href="#"><i data-feather="inbox"></i> Indbakke<span class="badge">2</span></a>
                     <a class="menu-punkt" href="#"><i data-feather="send"></i> Sendt</a>
@@ -194,10 +194,38 @@
     </div>
 
     </div>
+    <div class="modal">
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <div class="close">
+                    <i data-feather="x"></i>
+                </div>
+                <h2>Ny meddelse</h2>
+                <div class="til">
+                    <input placeholder="Modtager"></input><span>CC</span><span>BCC</span>
+                </div>
+                <div class="emne">
+                    <input placeholder="Emne"></input>
+                </div>
+                <div class="besked">
+                    <textarea placeholder="Skriv besked her..." rows="10"></textarea>
+                </div>
+                <div class="mail-tools">
+                    <i class="trash-mail"data-feather="trash-2"></i>
+
+                    <div>
+                        <i data-feather="paperclip"></i>
+                        <a class="btn btn-send"> Send</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script src="js/starmarked.js"></script>
+    <script src="js/modal.js"></script>
     <script type="text/javascript">
         feather.replace();
     </script>
